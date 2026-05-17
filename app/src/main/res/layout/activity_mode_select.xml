@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCALA"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임 모드를 선택하세요"
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnAiMode"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="🤖 AI 모드"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1B3A6B"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMultiMode"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="👥 멀티 모드 (같은 와이파이)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 / 5"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="질문"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1B3A6B"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#E8EAF6"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="A"
+        android:textSize="16sp"
+        android:backgroundTint="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="B"
+        android:textSize="16sp"
+        android:backgroundTint="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="C"
+        android:textSize="16sp"
+        android:backgroundTint="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="D"
+        android:textSize="16sp"
+        android:backgroundTint="#1B3A6B"/>
+
+</LinearLayout>

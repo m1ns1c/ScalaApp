@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요!"
+        android:textSize="20sp"
+        android:textColor="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCALA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#1B3A6B"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보유 코인: 0 C"
+        android:textSize="18sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="퀴즈 게임 시작"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1B3A6B"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnExchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="음료 교환"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#888888"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ScalaApp" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#1B3A6B</item>
+        <item name="colorPrimaryVariant">#1B3A6B</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.ScalaApp" parent="Base.Theme.ScalaApp" />
+</resources>
