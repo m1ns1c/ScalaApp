@@ -35,7 +35,7 @@ public class GamePlayActivity extends BaseActivity {
     ScrollView scrollView;
 
     String gameName, mode, hostIp;
-    String API_KEY = "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";
+    String API_KEY = "YOUR_GROQ_API_KEY_HERE";
 
     List<JSONObject> chatHistory = new ArrayList<>();
 
