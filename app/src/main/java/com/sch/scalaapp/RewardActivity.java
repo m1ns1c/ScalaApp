@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RewardActivity extends AppCompatActivity {
+public class RewardActivity extends BaseActivity {
 
     TextView tvResult, tvCoin;
     Button btnHome;

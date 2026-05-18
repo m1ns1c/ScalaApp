@@ -12,7 +12,7 @@ import java.net.NetworkInterface;
 import java.util.Collections;
 import java.util.List;
 
-public class RoomActivity extends AppCompatActivity {
+public class RoomActivity extends BaseActivity {
 
     Button btnCreate, btnJoin;
     EditText etRoomIp;

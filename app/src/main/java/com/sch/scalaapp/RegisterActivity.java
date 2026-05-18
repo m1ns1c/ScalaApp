@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
 
     EditText etRegId, etRegPw, etRegPwCheck;
     Button btnRegister;
@@ -51,11 +50,5 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "가입 완료! 로그인해주세요", Toast.LENGTH_SHORT).show();
             finish();
         });
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return true;
     }
 }

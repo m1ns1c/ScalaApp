@@ -3,25 +3,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
-
+    android:background="#0D1B2A">
 
     <TextView
-        android:id="@+id/tvCoin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#E8EAF6"
+        android:text=" "
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1A2E45"
         android:padding="16dp"
-        android:text="보유 코인: 0 C"
-        android:textColor="#1B3A6B"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🪙"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보유 코인"
+                android:textSize="11sp"
+                android:textColor="#7B9EC7"/>
+
+            <TextView
+                android:id="@+id/tvCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#4A90D9"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="#EEEEEE"
-        android:dividerHeight="1dp"/>
+        android:divider="#1A2E45"
+        android:dividerHeight="1dp"
+        android:background="#0D1B2A"/>
 
 </LinearLayout>

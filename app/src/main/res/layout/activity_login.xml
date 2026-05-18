@@ -5,7 +5,13 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="32dp"
-    android:background="#FFFFFF">
+    android:background="#0D1B2A">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,44 +19,85 @@
         android:text="SCALA"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="#1B3A6B"
-        android:layout_marginBottom="32dp"/>
-
-    <EditText
-        android:id="@+id/etId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="아이디"
-        android:textColor="#333333"
-        android:textColorHint="#AAAAAA"
-        android:inputType="text"
-        android:layout_marginBottom="12dp"/>
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="비밀번호"
-        android:textColor="#333333"
-        android:textColorHint="#AAAAAA"
-        android:inputType="textPassword"
-        android:layout_marginBottom="24dp"/>
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그인"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#1B3A6B"
-        android:layout_marginBottom="12dp"/>
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="4dp"/>
 
-    <Button
-        android:id="@+id/btnGoRegister"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임 트레이닝 앱"
+        android:textSize="13sp"
+        android:textColor="#7B9EC7"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="회원가입"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#888888"/>
+        android:orientation="vertical"
+        android:background="#1A2E45"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textSize="12sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="아이디 입력"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4A6080"
+            android:inputType="text"
+            android:background="#0D1B2A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textSize="12sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="비밀번호 입력"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4A6080"
+            android:inputType="textPassword"
+            android:background="#0D1B2A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="로그인"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1B3A6B"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnGoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="회원가입"
+            android:textColor="#7B9EC7"
+            android:backgroundTint="#0D1B2A"/>
+
+    </LinearLayout>
 
 </LinearLayout>

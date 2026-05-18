@@ -13,6 +13,10 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         new Handler().postDelayed(() -> {
             SharedPreferences prefs = getSharedPreferences("ScalaPrefs", MODE_PRIVATE);
             boolean isLoggedIn = prefs.getBoolean("isLoggedIn", false);

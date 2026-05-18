@@ -2,24 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="#1B3A6B">
+    android:gravity="center"
+    android:background="#0D1B2A">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SCALA"
-        android:textSize="48sp"
+        android:textSize="52sp"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="순천향대학교"
-        android:textSize="16sp"
-        android:textColor="#AAAAAA"
-        android:layout_marginTop="8dp"/>
+        android:text="순천향대학교 게임 트레이닝"
+        android:textSize="14sp"
+        android:textColor="#7B9EC7"
+        android:layout_marginBottom="48dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#4A90D9"/>
 
 </LinearLayout>

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ModeSelectActivity extends AppCompatActivity {
+public class ModeSelectActivity extends BaseActivity {
 
     Button btnAiMode, btnMultiMode;
 

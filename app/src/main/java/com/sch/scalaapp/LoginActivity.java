@@ -2,6 +2,8 @@ package com.sch.scalaapp;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,8 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("로그인");
+            getSupportActionBar().hide();
         }
 
         etId = findViewById(R.id.etId);

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="32dp"
-    android:background="#FFFFFF">
+    android:background="#0D1B2A">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,37 +13,95 @@
         android:text="회원가입"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="#1B3A6B"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCALA 계정을 만들어보세요"
+        android:textSize="13sp"
+        android:textColor="#7B9EC7"
         android:layout_marginBottom="32dp"/>
 
-    <EditText
-        android:id="@+id/etRegId"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="아이디"
-        android:layout_marginBottom="12dp"/>
+        android:orientation="vertical"
+        android:background="#1A2E45"
+        android:padding="24dp">
 
-    <EditText
-        android:id="@+id/etRegPw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="비밀번호"
-        android:inputType="textPassword"
-        android:layout_marginBottom="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textSize="12sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="8dp"/>
 
-    <EditText
-        android:id="@+id/etRegPwCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="비밀번호 확인"
-        android:inputType="textPassword"
-        android:layout_marginBottom="24dp"/>
+        <EditText
+            android:id="@+id/etRegId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="아이디 입력"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4A6080"
+            android:background="#0D1B2A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="가입하기"
-        android:backgroundTint="#1B3A6B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textSize="12sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etRegPw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="비밀번호 입력"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4A6080"
+            android:inputType="textPassword"
+            android:background="#0D1B2A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textSize="12sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etRegPwCheck"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="비밀번호 재입력"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4A6080"
+            android:inputType="textPassword"
+            android:background="#0D1B2A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="가입하기"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1B3A6B"/>
+
+    </LinearLayout>
 
 </LinearLayout>

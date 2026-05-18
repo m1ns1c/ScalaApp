@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GameListActivity extends AppCompatActivity {
+public class GameListActivity extends BaseActivity {
 
     ListView listView;
     String mode, hostIp;
@@ -29,6 +29,10 @@ public class GameListActivity extends AppCompatActivity {
             "두부 게임"
     };
 
+    String[] gameEmojis = {
+            "3️⃣", "🔫", "💬", "🍓", "🐋", "🍞", "🚇", "🍓", "🌿", "💀", "🫘"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,17 +47,25 @@ public class GameListActivity extends AppCompatActivity {
         hostIp = getIntent().getStringExtra("hostIp");
 
         listView = findViewById(R.id.listView);
-        listView.setPadding(0, 16, 0, 0);
-        listView.setClipToPadding(false);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, games) {
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, games) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
-                TextView tv = view.findViewById(android.R.id.text1);
-                tv.setTextColor(Color.parseColor("#1B3A6B"));
-                tv.setTextSize(18);
-                tv.setPadding(40, 30, 40, 30);
+                view.setBackgroundColor(Color.parseColor("#0D1B2A"));
+
+                TextView text1 = view.findViewById(android.R.id.text1);
+                text1.setText(gameEmojis[position] + "  " + games[position]);
+                text1.setTextColor(Color.parseColor("#FFFFFF"));
+                text1.setTextSize(16);
+                text1.setPadding(40, 20, 40, 4);
+
+                TextView text2 = view.findViewById(android.R.id.text2);
+                text2.setText("탭하여 규칙 보기");
+                text2.setTextColor(Color.parseColor("#7B9EC7"));
+                text2.setTextSize(11);
+                text2.setPadding(40, 0, 40, 20);
+
                 return view;
             }
         };

@@ -2,6 +2,8 @@ package com.sch.scalaapp;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("SCALA");
+            getSupportActionBar().setBackgroundDrawable(
+                    new ColorDrawable(Color.parseColor("#0D1B2A")));
+        }
+        getWindow().getDecorView().setSystemUiVisibility(0);
 
         tvCoin = findViewById(R.id.tvCoin);
         tvWelcome = findViewById(R.id.tvWelcome);
@@ -52,6 +61,6 @@ public class MainActivity extends AppCompatActivity {
         int coins = prefs.getInt("coins", 0);
         String userId = prefs.getString("userId", "");
         tvWelcome.setText(userId + "님, 안녕하세요!");
-        tvCoin.setText("보유 코인: " + coins + " C");
+        tvCoin.setText(coins + " C");
     }
 }

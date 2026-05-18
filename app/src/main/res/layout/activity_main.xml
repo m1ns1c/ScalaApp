@@ -3,61 +3,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
-    android:background="#FFFFFF">
+    android:background="#0D1B2A">
 
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="안녕하세요!"
-        android:textSize="20sp"
-        android:textColor="#1B3A6B"
-        android:layout_marginBottom="8dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SCALA"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:textColor="#1B3A6B"
-        android:layout_marginBottom="8dp"/>
-
-    <TextView
-        android:id="@+id/tvCoin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="보유 코인: 0 C"
-        android:textSize="18sp"
-        android:textColor="#888888"
-        android:layout_marginBottom="40dp"/>
-
-    <Button
-        android:id="@+id/btnQuiz"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="퀴즈 게임 시작"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#1B3A6B"
-        android:layout_marginBottom="12dp"/>
+        android:orientation="vertical"
+        android:background="#1A2E45"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/btnExchange"
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕하세요!"
+            android:textSize="14sp"
+            android:textColor="#7B9EC7"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCALA"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#0D1B2A"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🪙"
+                android:textSize="24sp"
+                android:layout_marginEnd="8dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보유 코인"
+                    android:textSize="11sp"
+                    android:textColor="#7B9EC7"/>
+
+                <TextView
+                    android:id="@+id/tvCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 C"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#4A90D9"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="음료 교환"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2E7D32"
-        android:layout_marginBottom="12dp"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그아웃"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#888888"/>
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="🎮  게임 시작"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1B3A6B"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnExchange"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="☕  음료 교환"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#0E4D3A"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="로그아웃"
+            android:textColor="#7B9EC7"
+            android:textSize="14sp"
+            android:backgroundTint="#1A2E45"/>
+
+    </LinearLayout>
 
 </LinearLayout>

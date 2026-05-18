@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ExchangeActivity extends AppCompatActivity {
+public class ExchangeActivity extends BaseActivity {
 
     TextView tvCoin;
     ListView listView;
@@ -60,16 +60,17 @@ public class ExchangeActivity extends AppCompatActivity {
     private void setupList() {
         String[] displayItems = new String[drinkNames.length];
         for (int i = 0; i < drinkNames.length; i++) {
-            displayItems[i] = drinkEmojis[i] + " " + drinkNames[i] + "  |  " + drinkCosts[i] + " C";
+            displayItems[i] = drinkEmojis[i] + "  " + drinkNames[i] + "   |   " + drinkCosts[i] + " C";
         }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, displayItems) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
+                view.setBackgroundColor(Color.parseColor("#0D1B2A"));
                 TextView tv = view.findViewById(android.R.id.text1);
-                tv.setTextColor(Color.parseColor("#1B3A6B"));
-                tv.setTextSize(16);
+                tv.setTextColor(Color.parseColor("#FFFFFF"));
+                tv.setTextSize(15);
                 tv.setPadding(40, 30, 40, 30);
                 return view;
             }
@@ -93,14 +94,14 @@ public class ExchangeActivity extends AppCompatActivity {
 
         coins -= cost;
         prefs.edit().putInt("coins", coins).apply();
-        tvCoin.setText("보유 코인: " + coins + " C");
+        tvCoin.setText(coins + " C");
         Toast.makeText(this, drink + " 교환 완료! 🎉", Toast.LENGTH_SHORT).show();
     }
 
     private void loadCoin() {
         SharedPreferences prefs = getSharedPreferences("ScalaPrefs", MODE_PRIVATE);
         int coins = prefs.getInt("coins", 0);
-        tvCoin.setText("보유 코인: " + coins + " C");
+        tvCoin.setText(coins + " C");
     }
 
     @Override

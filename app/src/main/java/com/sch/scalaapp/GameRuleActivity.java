@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GameRuleActivity extends AppCompatActivity {
+public class GameRuleActivity extends BaseActivity {
 
     TextView tvRule, tvBubble;
     ImageView imgScala;
